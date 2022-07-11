@@ -1,0 +1,12 @@
+<div class="nav-bar">
+    <div class="inner-content">
+        <img src="/img/logo.jpg" id="nav-img" alt="">
+    </div>
+    <div class="nav-header">
+        Banking System
+    </div>
+    <form {{on 'submit' this.logout }} class="logout-form">
+        <button type="submit" class="logout-btn">logout</button>
+    </form>
+</div>
+{{yield}}

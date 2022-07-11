@@ -1,0 +1,21 @@
+{{page-title "Userlogin"}}
+<div class="container">
+    <div class="container-header">
+        User Login
+    </div>
+    <div class="container-body">
+        <form {{on 'submit' this.login}}>
+            <div class="form-name">
+                <div>Email</div>
+                <input type="email" name="email" id="email" class="form-text-box" required>
+            </div>
+            <div class="form-name">
+                <div>Password</div>
+                <input type="password" name="password" id="password" class="form-text-box" required>
+            </div>
+            <input type="submit" class="form-submit-btn">
+        </form>
+        <button class="form-submit-btn" onclick="location.href='/bank'" type="button">Home</button>
+    </div>
+</div>
+{{outlet}}

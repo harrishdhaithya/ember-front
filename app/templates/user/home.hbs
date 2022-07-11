@@ -1,0 +1,26 @@
+{{page-title "Home"}}
+<div class="container">
+    <div class="container-header">
+        Welcome
+    </div>
+   
+    <div class="container-body">
+        <LinkTo @route="auth.adminlogin" class="ember-link">
+            <div class="container-btn">
+                Admin Login
+            </div>
+        </LinkTo>
+        <LinkTo @route="auth.userlogin" class="ember-link">
+            <div class="container-btn">
+                User Login
+            </div>
+        </LinkTo>
+        <LinkTo @route="auth.usersignup" class="ember-link">
+            <div class="container-btn">
+                User Signup
+            </div>
+        </LinkTo>
+    </div>
+    
+</div>
+{{outlet}}
